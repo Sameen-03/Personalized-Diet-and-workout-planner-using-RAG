@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 # Configure Gemini API
 def get_gemini_response(user_input):
-    genai.configure(api_key="AIzaSyCC0vk8AysjQZ2yGkILV48ZMvhe07qolZQ")  # Replace with your API Key
+    genai.configure(api_key="")  # Replace with your API Key
     model = genai.GenerativeModel("gemini-1.5-pro-latest")
     response = model.generate_content(user_input)
     return response.text
